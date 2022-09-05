@@ -5,6 +5,7 @@ int main(){
     int a = 10;
     int* b = &a;
     // & ------  Adress of the operators
+    // * -------- Stores the value at the adress
     system("cls");
     cout<<b<<endl;
     cout<<"The adress of a is " <<&a<< endl;
