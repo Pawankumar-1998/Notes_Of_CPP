@@ -31,6 +31,7 @@ int main()
     int a = 5, b = 7;
     cout << "The value of a is " << a << " and value of b is " << b << endl;
     // swap(a, b);
+    // cout<<swap(1,2);
     swap(a,b);
     cout << "The value of a is " << a << " and value of b is " << b << endl;
     swapAdress(&a,&b);
