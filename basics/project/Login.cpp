@@ -116,7 +116,7 @@ void forget()
     {
         int count = 0;
         string suserId, sId, spass;
-        cout << "\n\t\t\ enter the username which you remembered :";
+        cout << "\n\t\t\\ enter the username which you remembered :";
         cin >> suserId;
 
         ifstream f2("record.txt");
