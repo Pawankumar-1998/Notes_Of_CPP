@@ -6,7 +6,11 @@ class employee{
     int a , b , c ;
     public :
     int d , e ;
-    void setData (int a1 , int b1 , int c1); // this is declaration 
+    void setData (int a1 , int b1 , int c1){
+        a = a1;
+        b = b1;
+        c = c1;
+    } // this is declaration 
     void getData (){
         cout<<"the value of a is " << a << endl;
         cout<<"the value of b is " << b << endl;
@@ -16,11 +20,13 @@ class employee{
     }
 };
 
+/*
 void employee :: setData(int a2 , int b2 , int c2){
     a = a2;
     b = b2;
     c = c2;
 }
+*/
 
 int main(){
     system("cls");
