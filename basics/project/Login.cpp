@@ -48,8 +48,8 @@ int main()
     }
     return 0;
 }
-//  This function is used to login 
-// using file handling operation ifstream 
+//  This function is used to login
+// using file handling operation ifstream
 void login()
 {
     int count;
