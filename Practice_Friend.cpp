@@ -44,7 +44,7 @@ int main()
 }
 
 /* properties of friend function
-1. not in the scope of class 
+1. not in the scope of class
 2. contains object as argument
 
 
