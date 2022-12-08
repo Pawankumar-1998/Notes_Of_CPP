@@ -1,33 +1,37 @@
-#include <iostream>
-#include <string>
+// C++ program to demonstrate the use of class templates
 
+#include <iostream>
 using namespace std;
 
-template< class T >
-class Employee{
+// Class template
+template <class T>
+class Number
+{
 private:
-	T EmployeeID , EmployeeSalary;
-public:
-	T Employee( T theID , T theSalary ){
-		EmployeeID = theID;
-		EmployeeSalary = theSalary;
-	}
-};
-
-template< class T >
-class Student{
-private:
+    // Variable of type T
+    T num;
 
 public:
-	T Student(){}
+    Number(T n) : num(n) {} // constructor
 
+    T getNum()
+    {
+        return num;
+    }
 };
 
-int main(){
+int main()
+{
+    system("cls");
 
-	Employee <> theEmployee( 2 , 3000 );
-	Student <> theStudent ();
+    // create object with int type
+    Number<int> numberInt(7);
 
-	system( "pause" );
-	return 0;
+    // create object with double type
+    Number<double> numberDouble(7.7);
+
+    cout << "int Number = " << numberInt.getNum() << endl;
+    cout << "double Number = " << numberDouble.getNum() << endl;
+
+    return 0;
 }
